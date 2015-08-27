@@ -1,0 +1,363 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>FOLK | Yle.fi</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+
+    <!--[if IE 7]> <html class="ie7"> <![endif]-->
+    <!--[if IE 8]> <html class="ie8"> <![endif]-->
+    <!-- Styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/campaign.css" rel="stylesheet">
+    <link href="css/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+
+    
+
+    <!-- HTML5 elements & Responsive design (media queries) for IE6-8 -->
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+
+    <style type="text/css">
+        .fundbody { background: url("img/folk_bg.jpg") no-repeat bottom center fixed; background-size: cover; }
+    </style>
+
+    <!-- Fav  -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+
+
+</head>
+
+<body class="fundbody">
+
+    <div class="fundPageWrapper">
+        <header>
+            <div class="bg"><div class="row-fluid"><div class="span16"><img src="img/ylefilogo.png" /></div></div></div>
+            <div class="row-fluid">
+                <a class="logo" href="fund.html">
+                    <img class="" src="img/logo.png" alt="Yle Folk">
+                </a>
+
+                <a href="#" class="toggleMenu"></a>
+                <ul class="campaignNav">
+                    <li>
+                        <a href="fundevents.html" class="parent">Peukuta projektille tukiraha</a>
+                    </li>
+                    <li class="active">
+                        <a href="fundform.html">Ilmoita projektisi</a>
+                    </li>
+                    <li>
+                        <a href="fundRules.html">Näin jaamme rahat</a>
+                    </li>
+                </ul>
+            </div>
+
+        </header>
+
+        <div class="row-fluid wide fundcontainer">
+
+
+
+
+
+            <div class="span16">
+                <h1>Jätä hakemus</h1>
+
+                <div class="row-fluid ingress">
+                    <p>Kaikki suomalaiset mediaprojektit ja hankkeet, jotka tuottavat hyvää vibaa, voivat hakea stipendiä.</p>
+                    <div class="blackborderline fundform"></div>
+                </div>
+
+                <div id="container" class="row-fluid">
+
+
+                    <form action="/kampanjat/kaupunkienergiaa/ilmoita-oma-tapahtumasi/Submit/" method="post" id="campaignForm" enctype="multipart/form-data">
+
+                        <h3>Julkiset tiedot <span>(näkyvät kaikille)</span></h3> <!--PUBLIC INFORMATION / SHOWN TO EVERYBODY-->
+
+                        <div class="control-group">
+                            <label>Mediaprojektin nimi</label>
+                            <div class="control"><input name="name" id="name" type="text"></div>
+                        </div>
+
+                        <div class="control-group">
+                            <label>Youtube-videolinkki</label>
+                            <a title="" data-toggle="tooltip" class="helptext" data-html="true" data-original-title="Lisää videon YouTube ID, esim. <br />PMBaYo5wK1U<br />tai koko YouTube URL-osoite, esim. <br />www.youtube.com/watch?v=q3CPjgSkNEQ<br />">[i]</a>
+                            <div class="control"> <input name="videoUrl" id="videoUrl" type="text"></div>
+                        </div>
+
+                        <div class="control-group">
+                            <label> Liitä esittelykuva (näytetään jos videolinkkiä ei ole annettu)</label>
+                            <a title="" data-toggle="tooltip" class="helptext" data-html="true" data-original-title="Kuvan tulee olla JPG- tai PNG-muodossa.<br />Kuvan minimileveys on 821 pikseliä ja minimikorkeus 444 pikseliä.<br />Kuvan maksimikoko on 1,0 megatavua.<br />Listausnäkymässä kuvasta näytetään keskikohta.<br />Tapahtuman sivulla näytetään koko kuva.<br />">[i]</a>
+                            <div class="control"> <input id="File" name="File" type="file"></div>
+                        </div>
+
+                        <div class="control-group">
+                            <label> Projektin kuvaus</label>
+                            <div class="control"><textarea name="description" id="description"></textarea></div>
+                        </div>
+
+                        <div class="row-fluid">
+                            <div class="span8">
+                                <div class="control-group">
+                                    <label> Projekti alkaa</label>
+                                    <div class="control"><input type="text" name="startDate" id="startDate" value="" class="hasDatepicker"></div>
+                                </div>
+                            </div>
+                            <div class="span8">
+                                <div class="control-group">
+                                    <label> Projekti päättyy</label>
+                                    <div class="control"><input type="text" name="endDate" id="endDate" value="" class="hasDatepicker"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label> Tapahtumapaikka (jos on)</label>
+                            <div class="control"><input type="text" name="location" id="location"></div>
+                        </div>
+
+                        <div class="control-group">
+                            <label>Perustelut</label>
+                            <div class="control"> <textarea name="reasoning" id="reasoning"></textarea></div>
+                        </div>
+
+                        <div class="control-group">
+                            <label>Projektin hashtag</label>
+                            <div class="control"><input type="text" name="hashtag" id="hashtag"></div>
+                        </div>
+
+                        <div class="control-group">
+                            <label>Kotisivu</label>
+                            <div class="control"><input type="text" name="homePage" id="homePage"></div>
+                        </div>
+
+                        <h3>Taustatiedot <span>(näkyvät vain kisan järjestäjille)</span></h3> <!--BACKGROUND INFORMATION / SHOWN TO MODERATORS ONLY !!! -->
+
+                        <div class="control-group">
+                            <label>Nimesi</label>
+                            <div class="control"><input type="text" name="applicantName" id="applicantName"></div>
+                        </div>
+
+                        <div class="control-group span8">
+                            <label> Puhelinnumerosi</label>
+                            <div class="control"><input type="text" name="applicantPhoneNumber" id="applicantPhoneNumber"></div>
+                        </div>
+
+                        <div class="control-group span8">
+                            <label>Sähköpostiosoitteesi</label>
+                            <div class="control"><input type="text" name="applicantEmail" id="applicantEmail"></div>
+                        </div>
+
+                        <div class="control-group">
+                            <input type="checkbox" class="cform" value="Hyväksyn ehdot" name="acceptTerms" id="acceptTerms">
+                            <label for="acceptTerms">
+                                <a href="#" data-toggle="modal" data-target="#rulesModal">Hyväksyn ehdot</a>
+                            </label>
+                        </div>
+
+                        <div class="control-group"><div class="g-recaptcha" data-sitekey="6LfllQUTAAAAAHBmbKLJiR7qshGAFtbKTLUl-6ny"><div><div style="width: 304px; height: 78px;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="" tabindex="0" vspace="0" width="304" title="recaptcha-widget" role="presentation" height="78" id="I0_1440159004780" name="I0_1440159004780" src="https://www.google.com/recaptcha/api2/anchor?k=6LfllQUTAAAAAHBmbKLJiR7qshGAFtbKTLUl-6ny&amp;co=aHR0cHM6Ly90ZXN0aXd3dy5oZWxlbi5maQ..&amp;hl=fi&amp;v=r20150817145345&amp;size=normal&amp;usegapi=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.en.oRnMKFnD1t4.O%2Fm%3D__features__%2Fam%3DAQ%2Frt%3Dj%2Fd%3D1%2Ft%3Dzcms%2Frs%3DAGLTcCPd7QAcgkC41tVHtNGfA2EbWPVxLA#id=I0_1440159004780&amp;parent=https%3A%2F%2Ftestiwww.helen.fi&amp;pfname=&amp;rpctoken=19091545"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea></div></div></div>
+
+                        <div class="control-group text-center">
+                            <p class="confirmSubmit">Tarkistithan, että antamasi tiedot ovat oikein. Et voi enää muuttaa niitä lomakkeen lähettämisen jälkeen.</p>
+                            <div class="control"><input class="btn btn-large" type="submit" value="Lähetä" id="submitForm"></div>
+                        </div>
+                    </form>
+                </div>
+
+
+
+                <div class="eventsContainer">
+                    <div class="blackborderline fundform"></div>
+
+                    <h2 class="h1" id="katso-muiden-hakemuksia">Katso muiden hakemuksia</h2>
+
+                    <div class="row-fluid">
+                        <div class="eventsContainer">
+
+
+
+
+                            <div class="eventsList">
+                                <div class="row-fluid allEvents">
+                                    <div class="event" style="background-image: url('img/thumb_rupla_bassohelenjpeg.jpg'); background-size: cover; background-repeat: no-repeat;">
+                                        <a data-toggle="tab" href="#box1" data-href="/kampanjat/kaupunkienergiaa/peukuta-tukirahan-puolesta/puotilan-kartanon-rantalentis-2015/">
+
+                                            <img class="fundArrow" src="img/fund_arrow.png">
+
+                                            <div class="eventWrapper">
+                                                <p class="eventTitle">Puotilan Kartanon pelisivusto</p>
+                                                <p class="eventDate"></p>
+                                                <span class="eventThumb">1</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="event" style="background-image: url('https://img.youtube.com/vi/zSMfn4My-t0/0.jpg'); background-size: contain; background-repeat: no-repeat;">
+                                        <a data-toggle="tab" href="#box1" data-href="/kampanjat/kaupunkienergiaa/peukuta-tukirahan-puolesta/casino-palladium-nights-/">
+
+                                            <img class="fundArrow" src="img/fund_arrow.png">
+
+                                            <div class="eventWrapper">
+                                                <p class="eventTitle">Casino Palladium Nights </p>
+                                                <p class="eventDate"></p>
+                                                <span class="eventThumb">47</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="event" style="background-image: url('https://img.youtube.com/vi/NG14Ga--bMA/0.jpg'); background-size: contain; background-repeat: no-repeat;">
+                                        <a data-toggle="tab" href="#box1" data-href="/kampanjat/kaupunkienergiaa/peukuta-tukirahan-puolesta/saimaan-teatteri/">
+
+                                            <img class="fundArrow" src="img/fund_arrow.png">
+
+                                            <div class="eventWrapper">
+                                                <p class="eventTitle">Saimaan bloggaajat</p>
+                                                <p class="eventDate"></p>
+                                                <span class="eventThumb">48</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="event" style="background-image: url('img/thumb_rupla_bassohelenjpeg.jpg'); background-size: cover; background-repeat: no-repeat;">
+                                        <a data-toggle="tab" href="#box1" data-href="/kampanjat/kaupunkienergiaa/peukuta-tukirahan-puolesta/pefc-wood-works-x-puuguru/">
+
+                                            <img class="fundArrow" src="img/fund_arrow.png">
+
+                                            <div class="eventWrapper">
+                                                <p class="eventTitle">PEFC Wood Works X Puuguruvideo</p>
+                                                <p class="eventDate"></p>
+                                                <span class="eventThumb">6</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row-fluid">
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane fade row fundDrawer" id="box1">
+                                            <a class="closeDrawer" href="#">Sulje <span></span></a>
+                                            <div>
+                                                <div class="video-container">
+                                                    <iframe src="https://www.youtube.com/embed/AlZxhB2Ju9A" frameborder="0" allowfullscreen></iframe>
+                                                </div>
+                                                <h3>Videoblog Lorem ipsum</h3>
+                                                <p class="eventDate">Additional information may come here</p>
+
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. in hendrerit in vulputate velit esse.</p>
+
+                                                <div class="eventShare text-left">
+                                                    <span>Jaa:</span>
+                                                    <!-- AddThis Button BEGIN -->
+                                                    <div class="addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="https://www.youtube.com/watch?v=Oq3jJtHAd1A" addthis:title="Custom title comes here1">
+                                                        <a class="addthis_button_facebook"><img src="img/fb_big.png" /></a>
+                                                        <a class="addthis_button_twitter"><img src="img/tw_big.png" /></a>
+                                                    </div>
+                                                    <!-- AddThis Button END -->
+                                                </div>
+
+                                                <div class="giveThumb">
+                                                    <a class="voteEvent" href="/Kampanjat/maailman-parasta-kaupunkienergiaa/peukuta-tapahtumalla-tukiraha/ihmeellinen-tapahtuma2/Vote/">Ihmeellinen tapahtuma</a>            <p>1</p>
+                                                </div>
+
+                                                <div class="text-center"><a href="fundsingleevent.html" class="seeAllEvents">Lue lisää hankkeesta</a></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-fluid text-center">
+                        <a class="seeAllEvents" href="/kampanjat/kaupunkienergiaa/peukuta-tukirahan-puolesta/">Katso kaikki tapahtumat</a><br>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="rulesModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <h2>Rules</h2>
+
+                          
+
+                            <p>
+                                Huom! Hakemukset perusteluineen ovat julkisia. Julkaisemme ne tällä sivulla ja jaamme niitä
+                                FB-sivuillamme. Kiinnostavimmat pääsevät esille myös YleX:n taajuudella. Näin tapahtumasi
+                                voi saada julkisuutta, vaikka ei tuen kohteeksi valikoituisikaan.
+                            </p>
+
+                            <p>
+                                Haluamme olla mukana kasvattamassa uutta sisällöntekijöiden aaltoa. Hyökyaaltoa.
+                                Itse tekijöistä koostuva raati arvioi hankkeita ja myöntää pienrahoitusta suoraan tekijöille. Siis sinulle, jonka konseptissa loistaa tulinen intohimo, terve tekemisen meininki ja positiivinen ylpeys omaan kädenjälkeen.
+                            </p>
+
+                            <p>Sisältö voi olla oikeastaan mitä vain. Musiikkivideon tekemisestä vlogaamisen aloittamiseen tai mini- tai mikroelokuvan kuvaamisesta radiokuunnelman loihtimiseen ja siitä aina linnunpesien ja/tai omien silmämunien streamaamiseen.</p>
+
+                            <p>Näitä syntyviä sisältöjä julkaistaan verkossa, televisiossa ja radiossa. Haettavat summat ovat 200 eurosta 2.000 euroon.</p>
+
+                            <p>Tee maks. 60 sekunnin esittelyvideo projektistasi Youtubeen, jossa vastaat kysymyksiin miksi, mitä, miten, milloin ja kuka. Jos jännätuutti iskee, niin voit toki myös kirjoittaa hakemuksesi alla olevaan lomakkeeseen.</p>
+
+                            <p>Muista kertoa myös projektisi kokonaiskulut eli paljon euroja palaa kaiken kaikkiaan. Jos tarvitset jeesiä projektin toteuttamisessa, niin kerro sekin.</p>
+
+                            <p>Jaettavista rahoista päättää kerran kuussa kokoontuva neuvosto, jossa istuu eri ikäisiä ja kokoisia, tunnettuja ja ei-tunnettuja sisältöä tekeviä ammattilaisia ja noviiseja.</p>
+
+                            <p>He napsivat kylkiasennossa viinirypäleitä ja läpivalaisevat projektisi, ja valitsevat kaikista ehdokkaista rahoituksen saavat tahot kuukausittain.</p>
+
+                            <p>Ja jos ei valinta osunut kohdalle, niin makaa hetken lattialla kylkiasennossa, itke, kasaa itsesi, ja tee uusi, vielä parempi hakemus. Koko ajan kun voi hakea.</p>
+
+                            <p>Lykkyä tykö!</p>
+
+                            <div class="text-center"><button type="button" class="btn btn-large btn-default" data-dismiss="modal">Sulje</button></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="push"></div>
+        </div>
+
+        
+
+    </div>
+
+    <!-- Sticky footer -->
+    <div class="row-fluid wide fundfooter">
+        <p>
+            YHTEISTYÖSSÄ:
+            <img src="img/tieto_logo.png" />
+        </p>
+
+    </div>
+
+
+
+
+    <!-- javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/modernizr.custom.21031.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/custom.forms.jquery.js"></script>
+    <script src="js/response.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!--<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-51addd771ae8bb65" async="async"></script>-->
+
+
+
+</body>
+</html>

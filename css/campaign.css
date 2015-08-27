@@ -1,0 +1,614 @@
+/* ---------------------------------------------------------------------------------------------------------------------
+-------- Helen campaign report styles - overwrites some of the main styles  --------------------------
+-----------------------------------------------------------------------------------------------------------------------*/
+
+@font-face{
+    font-family:'Yleweb';
+    src:url(fonts/yle-regular-fd.woff) format("woff"),
+    url(fonts/yle-regular-fd.ttf) format("truetype");}
+
+@font-face{
+    font-family:'Yleweb-light';
+    src:url(fonts/yle-light-fd.woff) format("woff"),
+    url(fonts/yle-light-fd.ttf) format("truetype");}
+
+@font-face{
+    font-family:'Yleweb-medium';
+    src:url(fonts/yle-medium-fd.woff) format("woff"),
+    url(fonts/yle-medium-fd.ttf) format("truetype");}
+
+@font-face{
+    font-family:'Yleweb-bold';
+       src:url(fonts/yle-bold-fd.woff) format("woff"),
+        url(fonts/yle-bold-fd.ttf) format("truetype");}
+
+
+/* campaign header*/
+header {min-height:0; background-image:none;}
+header h1 {top: 61px; position:absolute; margin: 0 auto; left:0; right:0; padding: 0 130px 0 130px; max-width: 700px; font-size:32px;}
+header .logo {z-index:1; position:absolute; margin-top:70px;}
+.backlink {float:left; margin-right:30px; padding-top: 0px; z-index:1; position:relative;}
+.backlink a {text-transform: uppercase; color: #fff; font-size: 12px; height: 30px; line-height: 30px; display: inline-block; padding-left: 17px; background: url(/Static/img/sprite.png) no-repeat 0 -1094px transparent; font-family: 'Yleweb-bold',Arial; font-weight: 700;}
+.bg,.form-search .input-prepend .search-query, .form-search .input-prepend .btn {background-color:#00b9ff;}
+.bg {top:0; height:30px;z-index:0;}
+
+/* new yellow campaign header - animal quiz*/
+header.yellow { min-height: 200px; }
+header.yellow .bg {background-color:#ffc800; }
+header.yellow .logo {max-width: 120px; margin-top:60px; }
+header.yellow h1 {font-size:37px; line-height:36px; top:78px; padding:0 150px; max-width:none; /*color:#8c6ec8;*/}
+form.animalquiz {margin-top:30px;}
+form.animalquiz label.control-label {color:#6f6e68; margin-bottom:10px; font-size:16px; font-family: 'Yleweb-medium', arial; font-weight: 500; }
+form.animalquiz .control-group { margin-bottom:40px; }
+.animalquiz .controls {margin-bottom:5px;}
+.animalquiz .controls label {text-transform:none; font-size:16px; color:#000; font-family: 'Yleweb', arial; font-weight: 400; display:block;}
+.animalquiz input[type="submit"] { }
+.animalquizContent {display:block;}
+.animalquizResults {display:none;}
+.animalquizResults h2 {color:#8c6ec8; margin: 40px 0 30px;}
+.hint {background-color:#fff4cc; padding:15px 25px; text-align:left; max-width:595px; margin:40px auto 10px; clear:both;}
+.hint h5 {margin-bottom:10px; font-family: 'Yleweb-medium', arial; font-weight: 500;}
+.tellafriendcontainer {margin:30px auto 0; width:390px; color:#fff;}
+.tellafriend {color:#fff; background: url(/Static/img/sharebubble.png) no-repeat top right; width:255px; height:20px; padding: 17px 15px 20px 25px; background-size: contain; display:inline-block;}
+.tellafriend a {margin-top:0;}
+.tellafriend .addthis_toolbox {margin-top:0;}
+.tellfriendlinks {clear:both; margin:0 auto; text-align:center; color: #a31856;}
+.tellfriendlinks a {color: #a31856;margin-top: 10px;display: inline-block;}
+.tellafriendcontainer img{float:left; margin-right:10px;}
+
+
+/* campaign footer*/
+footer {min-height:0;}
+footer .span5 a{color:#333333; font-family: 'Yleweb-medium', arial; font-weight: 500; font-size:15px; margin-bottom:4px; display:inline-block;}
+/*.videocampaign footer .span5 a {color:#ff41a5;}
+.videocampaign footer .span5 a.btn {color:#fff;}*/
+
+footer .span5 a:hover{color:#333333; text-decoration:underline;}
+footer .span5 img {width: 200px; margin-top:30px;}
+/*.videocampaign .span5 img {width:auto; margin-top:0;}*/
+
+/* campaign top*/
+
+.row-fluid.wide.campaignTop {position:relative; overflow:hidden; margin-top: 98px;  }
+.campaignImage {position:absolute; width: 100%;}
+.campaignTop .row-fluid { margin: 80px auto 140px;  padding: 0px; z-index:1; position:relative; -webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+.campaignTop .row-fluid .row-fluid {padding:0; background: none; margin:0; padding:0; }
+.campaignTop .span16 {padding: 50px;background-color: #000; background: none repeat scroll 0 0 rgba(0, 0, 0, 0.68); -webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box; color: #FFFFFF; font-size: 19px;}
+.campaignTop .span8 { background-color: #000; background: none repeat scroll 0 0 rgba(0, 0, 0, 0.68); -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; color: #FFFFFF; font-size: 19px; padding: 50px 30px 30px 50px; position: relative; text-align: left; width: 50%; margin-left: 0; z-index: 1; }
+.campaignTop .span8 .span8, .campaignTop .span8 .span16 {padding:0; background:transparent;}
+.campaignTop .contentblock .span8 {margin-left: 0; width: 50%; }
+.campaignTop .contentblock .span8:first-child {margin-left: 0;}
+.campaignTop .imagealignleft {margin-bottom:30px;}
+.campaignTop.campaignThankYou h2{ text-align:center;margin-bottom:60px;}
+.campaignTop.campaignThankYou .row-fluid {  padding: 50px 100px; margin-bottom:0px;}
+.campaignTop.campaignThankYou .row-fluid .row-fluid {  padding:0 ;}
+.campaignTop.campaignThankYou .span8 {font-size:21px;}
+.video-container-wrapper {width:80%; margin:0 auto;}
+.campaignTop.campaignThankYou .addThis {text-align:center; color:#fff; clear:both;  padding:0px 0 20px; font-size:21px;}
+.video-container {height: 0;overflow: hidden;padding-bottom: 56.25%;padding-top: 0px;position: relative;  }
+.video-description {font-size: 21px; color:#fff; }
+.video-container iframe, .video-container object, .video-container embed {height: 100%;left: 0;position: absolute;top: 0;width: 100%;}
+.campaignTop h2 { font-family: 'Yleweb-bold',Arial; font-size: 42px; font-weight: 800; line-height: 48px; margin: 0px 0 20px; color: #fff; text-align: left; }
+
+.campaignTop label {color:#fff;}
+.campaignTop .controls label {color:#fff; text-transform: none; float:left; line-height:16px; display: inline-block; width:80%;}
+.campaignTop .custom-form-checkbox {}
+.campaignTop input#Email {margin-bottom:0;}
+.campaignTop .btn {margin-top:30px;}
+
+a.backlinkcampaign {font-family: 'Yleweb-bold', arial; font-weight: 800; color:#4AB070; text-transform:uppercase; font-size:23px;  background: url(../img/sprite.png) no-repeat 0 -1389px transparent; margin: 50px 0; display:inline-block; padding: 6px 35px;}
+
+/* campaign slider*/
+.frontpage #middleSlider {margin-top:-24px; margin-bottom:0;min-height:500px;}
+
+/*campaign custom share elements*/
+.addThis {margin-top:20px; margin-bottom:20px;}
+.addThis a { margin-right:10px;}
+.addThis span.share {float:none; top:-12px;}
+a.at300b, a.at300m {display:inline-block !important; position:relative; top:-10px;}
+
+/*solar panel*/ 
+#solarPanel {padding-bottom: 50px;}
+.solarPanelContent {padding-bottom: 30px;}
+.solarPanelContent .panel {float:left; width: 15px; height:15px; margin-right:2px; margin-bottom:2px; background-color:#4AB070;}
+.solarPanelContent .panel.taken {background-color:#ff41a5;}
+
+/*fund campaign*/
+.fundPageWrapper .logo img {position:relative; max-width: 260px;}
+ .fundcontainer {font-size:14px; line-height: 20px; font-family: 'Yleweb-medium', arial; font-weight: 500; color:#000;}
+/*.fundbody { background: url(../img/fundcampaign_bg.jpg)no-repeat bottom center fixed;  background-size: cover;  }*/
+.fundPageWrapper {min-height: 100%; margin: 0 auto -430px; }
+.fundcontainer h1 {color:#333; font-size:50px; line-height:52px; margin-top:0; font-family: 'Yleweb-bold', arial; font-weight: 800; margin-bottom:20px; text-transform:none;}
+.fundcontainer h2 {color:#333; font-size:40px; line-height: 42px; font-family: 'Yleweb-bold', arial; font-weight: 800; margin-top: 37px; text-transform:none;}
+.fundcontainer h3 {color:#333; font-size:28px; line-height:32px; font-family: 'Yleweb-bold', arial; font-weight: 800; padding-right:80px; padding-bottom:0px; margin-bottom:10px; margin-top:15px;}
+.fundcontainer h3 span {font-size:16px; font-family: 'Yleweb-bold', arial; font-weight: 700;}
+.fundcontainer h4 { color: #333; margin-bottom:5px; margin-top:20px;  font-family: 'Yleweb-bold', arial; font-weight: 800;}
+.fundcontainer p.ingress, .fundcontainer .ingress {text-align: center; font-size:20px; font-family: 'Yleweb-medium', arial; font-weight: 500; line-height:24px; color:#000;}
+.fundcontainer a.btn.big {font-size:20px; line-height: 24px; font-family: 'Yleweb-bold', arial; font-weight: 700; padding:18px; margin-top:20px;}
+.fundcontainer .xform-block .span16, .fundcontainer .content-block .span16 { padding: 0 !important; }
+.fundcontainer .tooltip-inner { max-width: 250px; text-align: left; }
+.fundcontainer .confirmSubmit { margin-top: 30px; }
+
+  .row-fluid.wide.fundcontainer {margin-top:90px;}
+.row-fluid.wide.fundcontainer .span16 { background-color: #fff; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 50px; }
+.row-fluid.wide.fundfooter {background: url(../img/fundfooter_helen.png) no-repeat bottom center; position:relative; margin:0 auto; text-align:center;}
+.fundfooter p {text-align:center; text-transform: uppercase; color:#fff; display:block; font-family: 'Yleweb-bold', arial; font-weight: 700; margin-bottom:0;}
+.fundfooter img { position:static;clear:both; margin-top: 20px; display: block;margin-left: auto;margin-right: auto; }
+.fundbody .bg {height:30px;}
+.fundbody .bg img { max-width: 25px; margin-top:2px; }
+.fundbody header {min-height:110px; background-color:#fff; position:relative;}
+.fundbody header .logo {bottom:13px;position:absolute;}
+
+#rulesModal {color:#333;  }
+#rulesModal .modal-body{margin-top:90px; border: 6px solid #999; }
+#rulesModal h2 {margin-top:20px;}
+#rulesModal .btn.btn-large {margin-bottom:0;}
+
+html, body.fundbody {height: 100%;}
+.fundfooter, .push {height: 430px;clear: both;}
+.push {padding-top:60px;}
+
+
+@media screen and (max-width:768px) {
+ .fundPageWrapper{margin-bottom:-400px;}
+ .fundfooter, .push {height: 400px;}
+.row-fluid.wide.fundfooter {  text-align:center; background-size:200%; }
+.fundfooter img {  max-width: 300px; position:static;}  
+}
+
+@media screen and (max-width:540px) {
+ .fundPageWrapper{margin-bottom:-280px;}
+.row-fluid.wide.fundfooter, .push {height: 280px;}
+.fundfooter img { max-width: 220px;  }  
+}
+
+select {width: 240px;}
+
+.row-fluid.selectedEvents {padding-bottom: 5px; margin-top: 30px; }
+.row-fluid.selectedEvents .event {position: relative; float:left; border-left: 5px solid #fff; width: 20%; padding: 12px; height: 160px; overflow:hidden; color:#fff; background: #000; margin-bottom:5px;  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+.row-fluid.selectedEvents .event:first-child, .row-fluid.selectedEvents .event:nth-child(6) {border-left:0;}
+.event img.eventImageSmall { position:absolute; top:0; left:0; z-index:0; width: 100%;  }
+.row-fluid.selectedEvents .event img {opacity:0.6; position:absolute; top: 0; left: 0; width:100%;}
+.event .eventTitle {height: 71px; overflow:hidden; position:relative; z-index:1;text-transform:uppercase; font-size:15px; line-height:18px; font-family: 'Yleweb-bold', arial; font-weight: 800; margin-bottom:3px;}
+.event .eventDate {position:relative; z-index:1;font-size:14px; font-family: 'Yleweb', arial; font-weight: 400; margin-bottom:0; color:#fff; float:left; display:inline-block;}
+.event a.btn {position:absolute; bottom: 12px; left:12px; right:12px; z-index:1;  padding-left:0; padding-right:0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.selectedEvents + .tab-content .giveThumb span, .selectedEvents + .tab-content .giveThumb p, .selectedEvents + .tab-content .giveThumb a{ display:none; }
+.selectedEvents + .tab-content .giveThumb {padding-top:0; background-color:#eaeaea;}
+.selectedEvents .event  {text-align:center;}
+.selectedEvents .event .eventTitle, .selectedEvents .event .eventDate {font-family: 'Yleweb', arial; font-weight: 400;}
+.selectedEvents .event .eventTitle {height:54px; margin-bottom:0; margin-top:18px; font-family: 'Yleweb-bold', arial; }
+.selectedEvents .event .eventDate {display:block; margin-bottom:8px; float:none; font-family: 'Yleweb-bold', arial;}
+.row-fluid.selectedEvents .event.open { text-align:center; font-family: 'Yleweb-bold', arial; font-weight: 800; font-size: 38px; padding-top: 30px; line-height: 33px;}
+.blackborderline {border-bottom:6px solid #000; padding-top: 34px;}
+.blackborderline.fundform {margin-bottom:30px; padding-top:32px;}
+
+.fundcontainer h3.eventMonth {padding-top:10px; padding-right:0; display:block; border-bottom: 1px solid #737576; margin-bottom:15px; padding-bottom:0; line-height:17px;}
+h3.eventMonth span { position:relative; top: 4px; padding-right: 10px; font-size:22px; line-height:20px;font-family: 'Yleweb-bold', arial; font-weight: 800; background-color:#fff;}
+
+
+.allEvents .event {position: relative; float:left; border-left: 5px solid #fff; width: 25%; padding: 12px; height: 198px; overflow:hidden; color:#fff; background: #000; margin-bottom:5px;  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+.allEvents .event:first-child {border-left:0;}
+.allEvents .fundArrow {position:absolute; z-index:1; top: 31px; right:79px;}
+.allEvents .event:first-child .fundArrow {right:83px;}
+.allEvents .eventWrapper {position:absolute; bottom:0; left:0; padding: 8px; z-index:1; width: 100%;  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;background-color: #000; background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);}
+.allEvents .eventTitle {color:#fff; font-size:15px; line-height:18px; height:38px;}
+.eventThumb {background: url(../img/fund_thumbsmall.png) no-repeat right 0px; padding-right:30px; text-align:right; font-size:20px; height:22px; display:block; float:right; font-family: 'Yleweb-bold', arial; font-weight: 800; color:#fff;}
+.seeAllEvents {font-size:20px; line-height:20px;  font-family: 'Yleweb-bold', arial; font-weight: 800 ;background: url(../img/fund_arrow_right.png) no-repeat right -1px; text-transform:uppercase; color:#000; margin-top: 40px; display:inline-block; padding-right:30px; min-height:25px;}
+.seeAllEventsWrapper {display:inline-block;}
+.seeAllEvents:hover {color:#000;}
+.eventShare {font-family: 'Yleweb-bold', arial; font-weight: 800; font-size:14px; text-transform:uppercase; position:relative; position:relative; margin-top:-40px; width:180px; float:right; }
+.eventShare.frontpage {margin-top:0;}
+.eventShare span {padding-top:15px; display:inline-block;}
+.eventShare .addthis_toolbox  {margin-left:10px;}
+.eventPassed {position:relative;}
+.eventPassed > a:before {content:" "; display:block; background-color:#000; opacity:0.65; width:100%; height: 100%; margin-left:-12px; margin-top:-12px; position:absolute; z-index:2;}
+
+.closeDrawer {position:absolute; text-transform:uppercase; color:#333; top:5px; right:5px; }
+.closeDrawer:hover {color:#333; text-decoration: none;}
+.closeDrawer  span { 
+  background: url(../img/sprite.png) no-repeat 0 -1956px;
+  display: inline-block;
+  width: 20px;
+  height:20px;
+  position:relative;
+  top:3px;
+  margin-left: 5px;
+
+}
+.fundDrawer .video-container {margin-top:25px;}
+.fundDrawer { position:relative;padding:20px 20px 40px 20px; background-color:#eaeaea; margin: 1px 0 5px 0}
+.fundDrawer  .eventShare {float:left; margin-top:40px; width: 163px;}
+.fundDrawer  .eventDate {font-size:14px; color:#000; font-family: 'Yleweb-bold', arial; font-weight: 800;}
+.fundDrawer .seeAllEvents {}
+.eventBig {margin-top:25px;}
+.fundDrawer.singleEvent {background:transparent; padding:0; margin:0; padding-bottom:50px; /*border-bottom: 6px solid #000;*/}
+.fundDrawer.singleEvent .video-container, .fundDrawer.singleEvent .eventBig {margin-top:0;}
+
+.fundcontainer .tab-content { background-color: #fff;box-shadow: none;margin-bottom: 0px;overflow: auto;padding: 0; clear:both;}
+
+.giveThumb {  text-align: center;
+  margin: 25px auto 0;
+  width: 228px;
+  background-color: #000;
+  padding-top: 1px;
+  color: #fff;}
+
+.giveThumb + div {clear:both;}
+
+.giveThumb a {background: url(../img/fund_thumbbig.png) no-repeat 0 0 #000; border:0; width:88px; height:88px; font-size:0; display: inline-block; vertical-align: middle;}
+/*.giveThumb a.voted {background-color: #737677;}*/
+.giveThumb a.voted:hover {cursor:default;}
+.giveThumb p {font-size:40px; font-family: 'Yleweb-bold', arial; font-weight: 800; display:inline-block; position:relative; top:10px; margin-left:10px; margin-top:6px;}
+.giveThumb div {  font-size: 18px; padding-bottom: 4px; margin-top: 0;}
+.likeEventText {display:block; clear:both; background-color:#fff; color:#000; padding-top: 4px; text-transform: uppercase; font-size:12px;}
+.tab-event-content .likeEventText {background-color:#eaeaea;}
+.voted ~ .likeEventText {display:none;}
+
+.fundcontainer input[type="text"], .fundcontainer textarea {width:100%;  -webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box; min-height:40px;}
+ .fundcontainer textarea {height: 160px;}
+ .fundcontainer label {color:#737576; font-size: 16px; font-family: 'Yleweb-bold', arial; font-weight: 700; }
+  .fundcontainer input.btn.btn-large[type="submit"] {margin-bottom:0; text-align:center; padding:18px 30px;}
+  .control-group.span8 {float:none; width: 50%; margin-left:0;}
+
+@media screen and (max-width:360px) {
+    .g-recaptcha { overflow: hidden; }
+}
+     
+ 
+
+.campaignNav {list-style:none; float:right; margin-top: 60px;  position:relative; z-index:1; }
+.campaignNav li {float:left; margin-left: 25px;}
+.campaignNav li a {float:left; color:#000;  font-family: 'Yleweb-medium', arial; font-weight: 500; font-size:18px;}
+.campaignNav li.active a {color:#737576;}
+.campaignNav li a:hover {text-decoration:none; color:#737576;}
+
+/* videocampaign*/
+.videocampaign .languageWrapper {float:right; position:relative; z-index:1; margin-top:0; height:30px; overflow:hidden; }
+.videocampaign .languageWrapper ul.topnav li {border:0;}
+.videocampaign .languageWrapper ul.topnav a{color:#fff; font-size:14px; padding: 6px 15px; text-transform: uppercase; border-right:0; }
+.videocampaign .languageWrapper ul.topnav a:hover {background-color:#333;}
+.videocampaign ul.topnav.language li, .videocampaign ul.topnav.language li.active + li { border-right:0; }
+.videocampaign .logo {z-index:2;}
+.videocampaign .bg,.fundbody .bg, .videocampaign .form-search .input-prepend .search-query, .videocampaign  .form-search .input-prepend .btn {background-color:#333;}
+.videocampaign header h1 {padding: 0 90px 0 170px; max-width:none;}
+.row-fluid.yellow {background-color:#ffc800; position:relative;}
+.row-fluid.yellow  h2 {color:#fff;}
+.campaignbglogo {position:absolute; bottom:0; right:11%; margin-bottom:-43px; margin-right:20px;}
+.videocampaign .bottomContent {position:relative;}
+.videocampaign .bottomContent .backtotopcontainer  {position:absolute; top:10px;}
+
+
+h2.videocampaigntitle {font-family: 'Yleweb-bold', arial; font-weight: 700; color:#6f6e68; font-size:29px; line-height:32px;}
+.supernarrow .span8:first-child {margin-left: 110px; max-width:290px;}
+.supernarrow .span8 + .span8 {max-width:270px;}
+label.sidebyside {display:inline-block; width: 250px;}
+.videocampaign .custom-form-radio {margin:20px auto 0; float:none;}
+
+label.videothumbnail {opacity:0.8;margin-bottom:20px;   position:relative; max-width:100%;}
+.active label.videothumbnail {opacity:1; }
+.campaignVideo  label.videothumbnail  { border: 2px solid transparent;}
+.campaignVideo .active label.videothumbnail  { border:2px solid #000;}
+label.videothumbnail.checked {opacity:1; z-index:1;}
+label.videothumbnail img { -webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box; border-left: 1px solid transparent;  border-right: 1px solid transparent; border-top: 1px solid transparent;}
+label.videothumbnail.checked  img { border-left: 1px solid #d6d6d6;  border-right: 1px solid #d6d6d6; border-top: 1px solid #d6d6d6;}
+.labeltext { width:100%; position:absolute;  top:0; height: 145px;    color:#fff; font-size:12px; line-height:15px;}
+.labeltextcontent {background:rgba(0, 0, 0, 0.7); height:50px; padding: 10px 20px; width:100%; bottom:0px; position:absolute; -webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box; }
+
+.checked .labeltextcontent {border-left: 1px solid #d6d6d6;  border-right: 1px solid #d6d6d6;}
+ul.parsley-errors-list {margin:0; padding:0; list-style-type:none; color: red;}
+.videocampaign .span4 {margin-left:0; margin-bottom:20px;}
+#parsley-id-multiple-favouritevideo {display:none;}
+.parsley-errors-list {display:block; margin-bottom:20px; color:red;}
+.server-error {color:red; margin-bottom:10px; text-align:center; display:block;}
+
+.voteresults label {cursor:default;}
+.voteresults .labeltextcontent {height:63px;}
+.yellowresultbox {background: url(../img/voteresult.png) no-repeat top left; color:#fff; font-size:30px; margin:30px auto 0;text-align:center; padding:55px 0 0; width:140px; height:85px; font-size:50px; font-family: 'Yleweb-bold', arial; font-weight: 700;}
+.yellowresultbox span {font-size:34px;}
+.voteresults .addThis {margin-bottom:60px;}
+
+/* videocampaign tabs*/
+.tabWrapper.videotabs  { margin-top:0;}
+.row-fluid.wide.campaignVideo {position:relative; overflow:hidden; margin-top: 0px;  }
+.campaignTop .videotabs .span16, .campaignVideo .videotabs .span16 {padding:100px 0 0 0;}
+.videotabs .tab-content { padding:0; box-shadow:none; -webkit-box-shadow:  none;}
+.videotabs .tab-content [class*="span"] {position:relative;z-index:1; }
+.videotabs .nav-tabs {z-index:1; position:relative;margin:0 auto; padding:0; text-align:center;}
+.videotabs .bigimage {position:absolute; width:auto; height:auto; max-height:none; max-width:none; min-width:100%; min-height:100%;}
+
+.videotabs .labeltext {bottom:0; background:rgba(0, 0, 0, 0.7);  min-height:50px; height:auto; padding: 10px 5px; width:100%; top:auto; bottom:0; position:absolute; -webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box; }
+.videotabs .nav-tabs > li {float:none; display:table-cell; }
+.videotabs .nav-tabs > li > a {padding:0; display:block;width:100%; height:155px;}
+.videotabs label.videothumbnail {margin-bottom:0; display:block; text-align:center;}
+.videotabs label.videothumbnail img {border:0; width:100%;}
+.videotabs label img, .videotabs label.checked img {opacity:0.6;}
+.videotabs .checked .labeltext {border:0;}
+.videotabs .active label img  {opacity:1;}
+.videotabs .nav-tabs > .active > a, .videotabs .nav-tabs > .active > a:hover, .videotabs .nav-tabs > .active > a:focus {border:0;}
+.campaignTop .videotabrow, .campaignVideo .videotabrow  {background: rgba(0, 0, 0, 0.4); margin:0 auto; position:relative; }
+.campaignTop .videotabrow .span16, .campaignVideo .videotabrow .span16 {padding:0; background: transparent;}
+.videocampaign_addthis {clear:both; }
+.videotabs .addthis_native_toolbox {float:right; margin: 30px 70px 10px 0;}
+
+.videotabs .video-container {position: static; padding-bottom: 0; padding-top: 0; height: auto; overflow: visible;}
+.videotabs .video-container iframe,
+.videotabs .video-container object,
+.videotabs .video-container embed { display:none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+.videotabs .tab-content .span16 {padding-top:20px; background:none;}
+.campaignTop .videotabs .tab-content .span16 {padding-top:80px; background:none;}
+.campaignVideo .videotabs .video-container img {margin-bottom:93px; margin-top:70px; }
+.videotabs .video-container img {margin-top:45px;}
+.videotabs .video-container img:hover {cursor:pointer;}
+
+.campaignVideo  .videoLinkToForm {display:none;}
+.videoLinkToForm {position:absolute; left:0; right:0; }
+.videoLinkToForm .btn {position:relative; top:-20px;}
+ 
+/* image poster clicked, player class added using js */
+.videotabs .video-container.player { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; }
+.videotabs .video-container.player img { display:none; }
+.videotabs .video-container.player iframe,
+.videotabs .video-container.player object,
+.videotabs .video-container.player embed {display:block;  }
+.videotabs .video-container.player:after { display: none; }
+
+button.btn.btn-large, input[type="submit"].btn.btn-large {margin-bottom:40px;}
+
+/* Social share */
+#socialSharePanel { width: 100%; position:relative; display: block; text-align: center;}
+#socialSharePanel .socialShareBanner { width: 100%; position:absolute; bottom: -26px; left:0; right:0;}
+#socialSharePanel .addThis { padding: 10px 5px 10px 15px; line-height: 32px; height: auto; text-align: center; position: relative; display: inline-block; left: 0; width: auto; z-index: 5; margin: 0 auto; box-shadow: 0 0 5px #c6cfdd; color: #000; background: #ffc800;  }
+#socialSharePanel .addThis a {text-transform: uppercase; text-decoration:underline; color:#fff; margin-left:5px; color:#000;}
+#socialSharePanel .span16 { min-height:0; }
+
+/*pink campaign order page*/
+.campaignOrder .languageWrapper {float:right; position:relative; z-index:1; margin-top:0; height:30px; overflow:hidden; }
+.campaignOrder .languageWrapper ul.topnav li {border:0;}
+.campaignOrder .languageWrapper ul.topnav a{color:#fff; font-size:14px; padding: 6px 15px; text-transform: uppercase; border-right:0; }
+.campaignOrder .languageWrapper ul.topnav a:hover {background-color:#333;}
+.campaignOrder ul.topnav.language li, .campaignOrder ul.topnav.language li.active + li { border-right:0; }
+.campaignOrder header {margin-left:-80px;}
+.campaignOrder {color:#737373;}
+.wide.pink { background-color: #ff41a5; }
+.wide.pink .span16 {background-color:transparent;  padding:0; }
+.campaignTop.pink  {margin-bottom:10px;}
+.campaignTop.pink .row-fluid.narrow {margin-bottom:0; position:relative;}
+.wide.pink h1 {color:#fff; text-align:left; font-size:47px; line-height:47px; max-width: 530px; }
+.campaignTop.pink + footer .row-fluid {}
+.campaignStar {background: url(../img/campaignStar.png) no-repeat top left transparent; width:246px; height:243px; color:#737373;  -webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box; padding: 70px 30px 40px; text-align:center; text-transform: uppercase; font-size:21px; position:absolute; top:-40px; right:0px; background-size:contain; }
+.campaignStar h3, .campaignStar h2, .campaignStar h1, .campaignStar h4 {margin:0 0 10px; font-size:21px; font-family: 'Yleweb-bold', arial; font-weight: 700; color:#737373;}
+.campaignStar a {text-decoration: underline;  font-family: 'Yleweb-bold', arial; font-weight: 700;}
+.campaignOrder h2 {font-size:32px; line-height:34px; text-transform:none; margin-bottom:40px; color:#ff41a5;  font-family: 'Yleweb-bold', arial; font-weight: 700;}
+.orderblock { border-top:2px solid #ff41a5 !important; border-bottom: 2px solid #ff41a5; display:block !important; }
+.orderblock td {border-top: 0 !important; background:#fff !important; padding:0 20px 50px 0 !important; width:75%; border-top:0; position:relative !important; white-space:normal !important;}
+.orderblock td + td {width:25%; border-left: 2px solid #737373; padding: 0 0 0 20px !important; position:static !important; text-align:center;}
+
+.orderblock tr:first-child td, .orderblock tr:last-child td {border-left:0; padding: 10px!important;}
+.orderblock.extrainfo tr:last-child td  {padding:0 !important;}
+.orderblock table {width:100%; margin-bottom:0;}
+.orderblock table td {width:50%; padding: 0px 0 0 0 !important; }
+.orderblock table td + td {width:50%; border-left: 0; padding: 0px 0 0 40px !important;  text-align:left;}
+.orderblock table tr:first-child td, .orderblock table tr:last-child td {border-left:0; padding: 0px 0 0 0 !important;}
+.orderblock table tr:first-child td + td {padding: 0px 0 0 40px !important; }
+.extrainfocontent td:first-child {padding: 0 !important;}
+
+
+.orderblock h2 {text-align:left; margin:0 0 10px; color:#737373;}
+.orderblock .btn-large {padding-left:25px; padding-right:25px; border-bottom: 1px solid #737373;}
+.orderblock .readMore, .orderblock .readLess  {  min-width:0; position:absolute; bottom:0; left:0;  cursor:pointer;}
+.orderblock .readLess, .orderblock.extrainfo .readMore {display:none !important;}
+.extrainfocontent {display: none !important;}
+.extrainfo .extrainfocontent {display:table-row !important;}
+.orderblock.extrainfo .readLess {display:inline-block !important;}
+.orderblock .price {margin-top:10px;font-size:65px;}
+.orderblock .unit {margin-top:15px;}
+.orderblock .monthly {margin-top:30px;}
+.orderblock li {line-height: 18px; margin-bottom:10px; margin-left:0; }
+.orderblock table h3 {margin-bottom:10px;font-size:22px; margin-top: 30px; line-height:24px; font-family: 'Yleweb', arial; font-weight: 400;}
+
+.videocampaign .addthis_toolbox {margin-top:30px;}
+
+
+ /*  -------------------------------------------------------------------------------------------------------------------- 
+---------------------------------------------- responsive rules for small devices --------------------------------------
+------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:1550px) {
+    .campaignImage {width:auto; height:100%; max-width: 1300%; min-width:100%;}
+    
+}
+
+
+@media screen and (max-width:959px) {
+   .campaignTop .row-fluid {width:94%; margin-bottom: 90px; margin-top: 70px;}
+   .campaignTop h2 {font-size:24px; line-height:28px;}
+   .campaignTop.campaignThankYou .row-fluid{margin: 25px auto 20px; padding: 20px 3% 0 3%;} 
+    .campaignTop.campaignThankYou .row-fluid .row-fluid {margin:0;}
+   .campaignTop.campaignThankYou .addThis {margin: 0px auto 0px; font-size:15px; padding: 0 0 20px 0;}
+    .campaignTop.campaignThankYou h2{ margin-bottom:30px;}
+   .campaignTop.campaignThankYou .span8, .campaignTop.campaignThankYou .span16, .campaignTop.campaignThankYou .addThis {font-size:18px;}
+      .campaignTop.campaignThankYou .span8, .campaignTop.campaignThankYou .span16 {padding-bottom:20px;}
+    .campaignbglogo { right:0%; width:75px; bottom:16px; }
+    .videocampaign header h1 {top:55px;}
+    h2.videocampaigntitle {font-size:23px; line-height:26px;}
+    .supernarrow .span8:first-child {margin-left: 0; max-width:none;}
+
+    .videotabs .row-fluid.wide .span16 {width:100%;}
+    .campaignVideo .videotabs .row-fluid.wide .span16 {width:94%;}
+    .videotabs .bigimage { min-width:100%; min-height:100%;}
+    .videotabs .tab-content { background-color: transparent; box-shadow: none; -webkit-box-shadow: none; float: none; margin-bottom: 0; margin-top:0; overflow: visible; padding: 0; width: 100%; }
+    .videotabs .nav-tabs {float:none; width: 100%; }
+    .videotabs .nav-tabs>li:last-child {margin-bottom:0;}
+    .labeltextcontent {bottom:-11px;}
+    .videotabs .labeltext {height:auto;}
+    .videotabs .nav-tabs > li {float:left; display:inline-block;width:auto; margin-left:0; width: 25%; }
+     .videotabs .nav-tabs > li > a { height:auto; color: #000000; display: block; font-size: 12px; line-height: 14px; outline: 0 none; padding: 0; text-align: center; text-transform: uppercase; vertical-align: middle;   }
+    .videotabs .nav-tabs > .active > a, .videotabs .nav-tabs > .active > a:hover, .videotabs .nav-tabs > .active > a:focus {box-shadow:none; -webkit-box-shadow:  none; }
+    .videotabs .addthis_native_toolbox {margin: 30px 0 0 0; }
+    .videotabs .video-container img {margin-bottom:0px; margin-top:0;}
+    .campaignVideo .videotabs .video-container img {margin-bottom:30px; margin-top:10px; }
+    .campaignTop .row-fluid.videotabrow, .campaignVideo .row-fluid.videotabrow {margin-top:46px; margin-bottom:0;}
+  
+ 
+    /*pink campaign order page*/
+    .campaignOrder header {margin-left:0px;}
+    .campaignStar {font-size: 16px; line-height:18px; width: 200px; height: 195px; top:-65px; padding-top:60px;}
+    .campaignStar h3, .campaignStar h2, .campaignStar h1, .campaignStar h4 {font-size: 16px; line-height:18px;}
+    .wide.pink h1 { font-size:30px; line-height:34px;}
+
+    /*fund campaign*/
+   
+    .fundbody .toggleMenu {margin-top:27px;}
+.fundbody header .logo {margin-top:45px; bottom:16px;}
+    .fundbody header {min-height:90px;}
+.fundPageWrapper .logo img {position:static;  left:0; max-width:150px; }
+      .row-fluid.wide.fundcontainer {margin-top:58px;}
+    .row-fluid.wide.fundcontainer .span16 { padding: 20px 30px;}
+    .campaignNav { margin-top: 52px; }
+.campaignNav li { margin-left: 15px;}
+.campaignNav li a { font-size:16px;}
+ .fundcontainer h1 {font-size:40px; line-height:44px; margin-top:0;}
+ .fundcontainer .tab-content {width:100%; overflow:hidden; min-height:0;}
+ .fundcontainer .tab-content .tab-pane.active {padding:20px;}
+ #sortEvents { margin-left: auto; margin-right: auto; display: block; }
+
+
+
+  .allEvents .event {width:210px;}
+ .allEvents .event:nth-child(3n) {clear:both; border-left:0;}
+ .row-fluid.allEvents  {margin:0 auto; width: 420px;}
+
+ .row-fluid.selectedEvents .event:nth-child(6) {border-left:5px solid #fff;}
+ .row-fluid.selectedEvents .event{width: 210px; height:198px;}
+ .row-fluid.selectedEvents .event:nth-child(2n+3) {clear:both; border-left:0;}
+ .row-fluid.selectedEvents {margin:0 auto; width:420px;}
+
+}
+
+@media screen and (max-width:767px){ 
+    .backlink { margin-right:0px; margin-left: 3%;}
+    .bg {display:block;}
+    footer {text-align:center;}
+    header.yellow { min-height: 180px; } 
+    header h1, header.yellow h1  { margin:0; width: auto; font-size: 20px; line-height:26px; position:static; margin-bottom: 10px; padding:0 3%;}
+    footer .span5 img {margin:30px 0 10px 0;}
+    .row-fluid.wide.campaignTop {margin-top:0;}
+    .campaignTop .row-fluid {margin: 30px auto 60px; padding: 0;}
+     .campaignImage {width:100%; height:auto; max-width:100%;}
+     .campaignTop h2 {text-align:center; }
+     .campaignTop .span8, .campaignTop .span16 {margin-left:0; padding:20px 10px 10px 10px; margin:0; height: auto !important;}
+    .campaignTop .span8, .campaignTop .contentblock .span8  {clear:both; width: 100%; float:none; margin-bottom:0px; margin-top:0; text-align:center;  }
+    .campaignTop .contentblock .span16 {margin-left:0; text-align: center;}
+    .campaignTop .contentblock .span8 + .span8 {margin-left:0;}
+
+     .campaignTop .control-group { text-align:left;  }
+    .campaignTop.campaignThankYou .span8 {text-align:left; }
+    .video-container-wrapper  {margin-top:10px;width:100%; font-size:18px;}
+   
+   .thankyouContent .imageAlignLeft, .thankyouContent .imageAlignLeft {width: 50px;}
+   .videocampaign header h1 {color:#ffc800; padding: 0 15px; }
+    .videocampaign .languageWrapper { display: block !important; padding: 0; float: right; border-top: 0; text-align: right; width: auto; background-color: transparent; position: relative; margin-bottom: 0; margin-top: 0px; }
+     .videocampaign .languageWrapper .topnav li a {padding: 6px 15px;}
+      .videocampaign .languageWrapper .topnav li a:hover {background-color: transparent;}
+   label.sidebyside {width: 80%;}
+   .videotabs .tab-content .span16 {padding-top:20px;}
+    .videotabs.tabWrapper { background-color: transparent; box-shadow: none; -webkit-box-shadow: none; margin-bottom: 0; margin-top: 0; padding: 0; position: relative; }
+    .videotabs .nav-tabs {display:block !important; background:transparent; border:0;}
+    .videotabs .nav-tabs > li {border:0;background:transparent; width: 50%;}
+
+    .videotabs .addthis_native_toolbox {margin: 20px 0 0 0; float:none;}
+  
+    .videotabs .tab-content .tab-pane.active {padding:0;}
+    .campaignTop .videotabs .tab-content .span16 {padding-top:20px;}
+    .yellowresultbox {margin-top:15px;}
+    .voteresults label.videothumbnail {margin-bottom:0;}
+    .orderblock .btn-large {padding-left:15px; padding-right:15px; font-size:14px;}
+    .videocampaign input {width: 100%; max-width:330px; height:37px; -webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+    .videocampaign .supernarrow .span8 + .span8 {max-width:100%;}
+
+     /*fund campaign*/
+header .bg .row-fluid {width: 94%;}
+    .fundbody header .logo {position:static; margin-bottom:12px; float:left}
+      .row-fluid.wide.fundcontainer {margin-top:20px;}
+    .row-fluid.wide.fundcontainer .span16 {padding: 10px;}
+    .campaignNav {display:none; float:left; margin-top:20px; margin-left:3%; clear:both; width: 97%;}
+    .campaignNav li { margin-left:0; float:none; display:block; clear:both;}
+    .campaignNav li a { font-size:17px; display:block; float:none; padding: 3px 0;}
+     .fundcontainer h1 {font-size:26px; line-height:30px; margin-bottom:15px; margin-top:10px; }
+      .fundcontainer h2  {font-size:22px; line-height:26px; margin-bottom:15px;  }
+
+       .fundcontainer p.ingress, .fundcontainer .ingress {font-size:16px; line-height:20px; }
+       .eventShare {clear:both; float:none; text-align:center; width:auto; margin-top:25px;}
+       .eventShare .addthis_toolbox {display:inline-block; float:none;}
+       .eventShare span {padding-top:0; top:-30px; position:relative;}
+
+       .fundcontainer .tab-content .tab-pane.active {padding:10px;}
+       .fundDrawer .eventShare span {display:block; top:0;}
+        .fundDrawer .eventShare  {width:auto; margin-top:0; text-align:left;}
+        .fundcontainer .fundDrawer h3 {padding-top:20px; padding-right:0; font-size: 25px; line-height:25px;}
+       .fundDrawer .eventShare .addthis_toolbox {margin-left:0;}
+       .giveThumb {margin:0; padding-top:0; clear:both; text-align:left;}
+       .giveThumb p {font-size:34px;}
+       .giveThumb div {margin-left: 0px;}
+
+       .seeAllEvents {font-size:16px;}
+       .control-group.span8 { width: 100%; }
+        input[type="file"] {width:100%;}
+
+        #ui-datepicker-div {max-width:240px;}
+        table.ui-datepicker-calendar {float:none; display:table;  }
+        table.ui-datepicker-calendar td, table.ui-datepicker-calendar th, table.ui-datepicker-calendar tr {width:auto; float:none; }
+        table.ui-datepicker-calendar tr {display:table-row; border-top:0;}
+        table.ui-datepicker-calendar td {display:table-cell;} 
+         table.ui-datepicker-calendar thead {display:normal;}
+         table.ui-datepicker-calendar tbody{display:table; float:none; width:100%;}
+
+
+       
+@media screen and (max-width:490px) {
+     .allEvents .event:nth-child(3n) {clear:none; border-left:0;}
+ .allEvents .event:nth-child(2n) {clear:both; border-left:0;}
+ .row-fluid.allEvents  {margin:0 auto; width: 210px;}
+
+  .row-fluid.selectedEvents .event:nth-child(6) {border-left:0;}
+ .row-fluid.selectedEvents .event{border-left:0; clear:both;}
+ .row-fluid.selectedEvents {margin:0 auto; width:172px;}
+
+}
+
+        
+
+     /*pink brand campaign order page*/
+    .campaignStar {clear:both; position:static; margin:0 auto 20px; }
+    .wide.pink h1 { max-width: 100%; text-align:center; font-size:24px; line-height:26px;}
+    .campaignOrder h2 {font-size:24px; line-height:26px;}
+    .orderblock td { width:75%; }
+    .orderblock td + td {width:25%; }
+    .orderblock .price {margin-top:10px;font-size:45px;}
+    table.notresponsive.orderblock table {border-top:0;}
+    .orderblock img { float:none; margin-left:0; max-width:150px;}
+    .extrainfocontent table td, .orderblock table tr:first-child td + td {display:block; width:100%; padding-left:0 !important;}
+
+    #socialSharePanel .socialShareBanner { position: static; margin-top:30px; margin-bottom:20px; line-height:18px; top: 0px; width: 100%;}
+    #socialSharePanel .addThis {line-height:24px}
+
+     /*animalquiz*/
+    .animalquizResults h2 { margin: 20px 0 15px;}
+    .tellafriendcontainer { width:270px; margin-top:10px;}
+    .tellafriendcontainer a {font-size:14px; margin-top:5px;}
+    .tellafriend {clear:both; display:block; width: 232px; height: 23px; padding: 40px 25px 15px 25px; background:url(/Static/img/sharebubble_mobile.png) no-repeat top left;}
+
+    .tellafriendcontainer img{margin-right:5px; margin-bottom:5px; float:none; }
+    .tellfriendlinks {line-height:16px;}
+    .hint {margin-top:20px;}
+
+
+}
+
+
+@media screen and (max-width:480px) {
+     .campaignImage {width: auto; height:100%; max-width:1300%;}
+      a.backlinkcampaign { text-align:left; font-size: 18px; line-height: 18px; padding-top:0; height:30px; }
+
+}

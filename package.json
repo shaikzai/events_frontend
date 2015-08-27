@@ -1,0 +1,20 @@
+{
+  "name": "yle",
+  "version": "0.0.0",
+  "description": "Events application",
+  "author": "Zainul",
+  "dependencies": {
+    "angular": "~1.4.4",
+    "angular-aria": "~1.4.4",
+    "angular-animate": "~1.4.4",
+    "angular-material": "~0.10.1",
+    "angular-ui-router": "~0.2.15",
+    "ng-resource": "~1.3.2",
+    "angular-resource": "~1.4.4"
+  },
+  "devDependencies": {
+    "jasmine-core": "~2.3.4",
+    "karma-jasmine": "~0.3.6",
+    "karma-chrome-launcher": "~0.2.0"
+  }
+}

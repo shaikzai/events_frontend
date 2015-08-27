@@ -1,0 +1,85 @@
+<div class="row-fluid wide fundcontainer">
+
+
+
+
+
+  <div class="span16">
+    <h1>Peukuta hankkeelle tukiraha</h1>
+
+
+
+
+
+    <div class="row-fluid">
+      <select id="sortEvents">
+        <option value="date">Uusimmat ensin</option> <!-- newest first -->
+        <option value="alphabetic">Aakkosjärjestys</option> <!-- in alphabetical order -->
+        <option value="eventdate" selected="selected">Alkamisajankohdan mukaan</option> <!-- sort by event date, oldest first -->
+        <option value="liked">Tykätyimmät</option> <!-- most liked (most thumbs given, (thumb script is not in this demo) -->
+
+      </select>
+    </div>
+
+    <div class="eventsContainer row-fluid">
+
+
+
+      <div class="eventsList" >
+
+        <h3 class="eventMonth"><span>May</span></h3>
+        <div class="row-fluid allEvents">
+          <div ng-repeat="event in eventList" class="event" event-img = 'img/thumb_rupla_bassohelenjpeg.jpg'>
+            <a data-toggle="tab" href="#box1" data-href="/kampanjat/kaupunkienergiaa/kesan_tapahtumakalenteri/kadet-ilmaan---suomirappia-1986-2015/">
+
+              <img class="fundArrow" src="img/fund_arrow.png">
+
+              <div class="eventWrapper">
+                <p class="eventTitle">{{event.name}}</p>
+                <p class="eventDate"></p>
+                <span class="eventThumb">{{event.like}}</span>
+              </div>
+            </a>
+          </div>
+          
+        </div>
+        <div class="row-fluid">
+
+          <div class="tab-content">
+
+            <div role="tabpanel" class="tab-pane fade row fundDrawer" id="box1">
+              <a class="closeDrawer" href="#">Sulje <span></span></a>
+              <div>
+                <img class="eventBig" src="img/fund_event_big.jpg" />
+                <h3>Kädet ilmaan -suomiräppiä</h3>
+                <p class="eventDate">Additional information may come here</p>
+
+                <p>Musiikkivideotuotanto bändillemme. Haluamme rahaa. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. in hendrerit in vulputate velit esse.</p>
+
+                <div class="eventShare text-left">
+                  <span>Jaa:</span>
+                  <!-- AddThis Button BEGIN -->
+                  <div class="addthis_toolbox addthis_default_style addthis_32x32_style" addthis:url="https://www.youtube.com/watch?v=AKc1Hjjz1Ys" addthis:title="Custom title comes here2">
+                    <a class="addthis_button_facebook"><img src="img/fb_big.png" /></a>
+                    <a class="addthis_button_twitter"><img src="img/tw_big.png" /></a>
+                  </div>
+                  <!-- AddThis Button END -->
+                </div>
+
+                <div class="giveThumb">
+                  <a class="voteEvent" href="/Kampanjat/maailman-parasta-kaupunkienergiaa/peukuta-tapahtumalla-tukiraha/ihmeellinen-tapahtuma2/Vote/">Ihmeellinen tapahtuma</a>            <p>1</p>
+                </div>
+
+                <div class="text-center"><a href="fundsingleevent.html" class="seeAllEvents">Lue lisää hankkeesta</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+
+  </div>
+  <div class="push"></div>
+</div>
